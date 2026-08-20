@@ -83,3 +83,15 @@ class ParkingManagement:
         del self.parked[vehicle]
 
         return round(fee, 2)
+
+if __name__ == "__main__":
+
+    p = ParkingManagement()
+
+    print("SMART PARKING MANAGEMENT SYSTEM")
+    print("===============================")
+
+    print(p.entry("CAR1", "Car"))
+    print(p.entry("EV1", "EV"))
+
+    print(p.exit("CAR1", 2))
